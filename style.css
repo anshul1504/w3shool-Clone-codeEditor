@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.editor-menu {
+  width: 100%;
+  height: 6rem;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5px 0 5px 10px;
+}
+
+.btn {
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #17c;
+  cursor: pointer;
+  padding: 8px 7px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-right: 8px;
+  min-width: 50px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: orangered;
+}
+
+.live {
+  font-size: 16px;
+  background-color: rgb(198, 240, 179);
+  color: #242424;
+  font-weight: bold;
+  border: 2px solid orangered;
+  padding: 5px 7px;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.live > * {
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  bottom: 0px;
+  top: 7rem;
+  width: 100%;
+  display: flex;
+}
+
+.left,
+.right {
+  height: 100%;
+  width: 50%;
+  border: 1px solid #d5d5d5;
+}
+
+.bar {
+  width: 4px;
+  height: 100%;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+}
+
+.logo {
+  margin-right: 950px;
+  font-size: 20px;
+  margin-left: 15px;
+  font-weight: 900;
+  color: #17c;
+  border-bottom: 2px dotted orangered;
+  text-shadow: 0px 1px;
+}
+
+.editor {
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-color: #ccc;
+  padding: 1rem 0 0 1rem;
+}
+
+i {
+  margin-right: 5px;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+  white-space: pre;
+  right: 0;
+  padding: 4px;
+}
